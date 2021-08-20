@@ -18,7 +18,7 @@ double suma(double op1, double op2);
 double resta(double op1, double op2);
 double multi(double op1, double op2);
 double div(double op1, double op2);
-void imprimirResultados(double res,char[10]);
+void imprimirResultados(double res,char[20]);
 
 //variable global, no muy recomendable usar
 //double op1, op2, resultado;
@@ -54,6 +54,6 @@ double multi(double op1, double op2){
 double div(double op1, double op2){
   return (op1 / op2);
 }
-void imprimirResultados(double res, char[10]){
-printf("\nel resultado de la %s es: %lf", texto,res);
+void imprimirResultados(double res, char texto[20]){
+printf("\nel resultado de la %s es: %lf",texto,res);
 }
